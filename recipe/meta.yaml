@@ -1,5 +1,5 @@
 {% set name = "music21" %}
-{% set version = "6.5.0" %}
+{% set version = "6.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f2b8e7afe9f664172c50a711f283d5974ba22952eb4e21191a5582c61d3bf7ea
+  sha256: dcbc4321438c6ddbfb99b63aefd434a86d0d1fa632cfb92b001606ea6c91b8f9
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   license: BSD-3-Clause OR LGPL-3.0-or-later
   license_family: BSD
   license_file: music21/license.txt
-  summary: 'A Toolkit for Computer-Aided Musical Analysis.'
+  summary: A Toolkit for Computer-Aided Musical Analysis.
   description: |
     A Toolkit for Computer-Aided Musical Analysis.
     Developed by cuthbertLab, Michael Scott Cuthbert (Associate Professor, MIT), Principal Investigator.
