@@ -1,5 +1,5 @@
 {% set name = "music21" %}
-{% set version = "6.7.0" %}
+{% set version = "6.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dcbc4321438c6ddbfb99b63aefd434a86d0d1fa632cfb92b001606ea6c91b8f9
+  sha256: f199534713a6e5cd70a6e89d5ffbe78d5fd1086753d5092efe32681d2ab7a13a
 
 build:
   noarch: python
