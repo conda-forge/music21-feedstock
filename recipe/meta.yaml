@@ -27,6 +27,7 @@ requirements:
     - matplotlib-base
     - more-itertools
     - numpy
+    - requests
     - webcolors >=1.5
 
 test:
