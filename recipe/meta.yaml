@@ -1,5 +1,5 @@
 {% set name = "music21" %}
-{% set version = "8.3.0" %}
+{% set version = "9.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 28627bf5e47707ac5e6ae5161c3a2160f154b796cf4aca992e5d46847caa7ca6
+  sha256: 6c61425c7af5bf54e120afebabcffdb22be32620b0ea22b0d8e36ac5eafaefc8
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - chardet
     - joblib
     - jsonpickle
