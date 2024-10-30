@@ -46,7 +46,7 @@ about:
     A Toolkit for Computer-Aided Musical Analysis.
     Developed by cuthbertLab, Michael Scott Cuthbert (Associate Professor, MIT), Principal Investigator.
     The development of music21 is supported by the generosity of the Seaver Institute and the NEH.
-  doc_url: https://web.mit.edu/music21/doc/index.html
+  doc_url: https://www.music21.org/music21docs/
   dev_url: https://github.com/cuthbertLab/music21
 
 extra:
