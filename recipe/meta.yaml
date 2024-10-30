@@ -26,7 +26,7 @@ requirements:
     - jsonpickle
     - matplotlib-base
     - more-itertools
-    - numpy
+    - numpy <2.0.0
     - requests
     - webcolors >=1.5
 
