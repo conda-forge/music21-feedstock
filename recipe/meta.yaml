@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "music21" %}
 {% set version = "9.3.0" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0cf4c67da2062ec164037280580d51ed06b58e84f78afc8d00f088c2bff74f4a
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - chardet
     - joblib
     - jsonpickle
@@ -31,6 +32,8 @@ requirements:
     - webcolors >=1.5
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - music21
   commands:
