@@ -11,11 +11,12 @@ Summary: A Toolkit for Computer-Aided Musical Analysis.
 
 Development: https://github.com/cuthbertLab/music21
 
-Documentation: https://web.mit.edu/music21/doc/index.html
+Documentation: https://www.music21.org/music21docs/
 
-A Toolkit for Computer-Aided Musical Analysis.
-Developed by cuthbertLab, Michael Scott Cuthbert (Associate Professor, MIT), Principal Investigator.
-The development of music21 is supported by the generosity of the Seaver Institute and the NEH.
+People use music21 to answer questions from musicology using computers,
+to study large datasets of music, to generate musical examples, to teach
+fundamentals of music theory, to edit musical notation, study music and
+the brain, and to compose music (both algorithmically and directly).
 
 
 Current build status
