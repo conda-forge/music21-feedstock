@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "music21" %}
-{% set version = "9.5.0" %}
+{% set version = "9.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f888a84f7abfa6e727b7028cdbf7b7bd9fa746009b766ca604fb749a67078d1a
+  sha256: eaf59593a54ea43ae4f723691711bee8eb6a1b18d0f8f6b1fe7ffcd3e5024931
 
 build:
   noarch: python
