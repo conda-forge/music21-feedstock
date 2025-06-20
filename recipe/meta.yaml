@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "music21" %}
-{% set version = "9.7.0" %}
+{% set version = "9.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eaf59593a54ea43ae4f723691711bee8eb6a1b18d0f8f6b1fe7ffcd3e5024931
+  sha256: b056cc41fb989f492e291882c13c02ebc13e8f5734c6aab9aeb9fe6cfd2c2550
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - jsonpickle
     - matplotlib-base
     - more-itertools
-    - numpy <2.0.0
+    - numpy >=1.26.4
     - requests
     - webcolors >=1.5
 
