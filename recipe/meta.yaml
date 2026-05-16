@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "music21" %}
-{% set version = "9.9.2" %}
+{% set version = "10.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0d705d2e682bfd49542ec05863bca75605d30c104af6195ed3893e6f92d0ff9e
+  sha256: 61d841db5ea49cec49a086cba7e3ae89b11786897857501f622fec2190fe6b7a
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ about:
   home: https://github.com/cuthbertLab/music21
   license: BSD-3-Clause OR LGPL-3.0-or-later
   license_family: BSD
-  license_file: music21/license.txt
+  license_file: LICENSE
   summary: A Toolkit for Computer-Aided Musical Analysis.
   description: |
     People use music21 to answer questions from musicology using computers,
