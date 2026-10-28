@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "music21" %}
-{% set version = "10.5.1" %}
+{% set version = "10.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6256fe202f7eb5d8df0fb4105550727684c4d299ca54f1725ebe4e6f5e549ea0
+  sha256: 4497ddf0383e5c920d434032c28bc98488c80218aa9deeb037fd626453086647
 
 build:
   noarch: python
